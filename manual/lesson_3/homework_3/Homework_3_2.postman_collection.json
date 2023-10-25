@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "a0fea5db-88d7-4f57-8449-1eb6c37ac1ef",
+		"name": "Homework_3_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20994417",
+		"_collection_link": "https://blue-zodiac-734689.postman.co/workspace/TodoAppStrapi~f1c6eed3-4f58-4ace-a05f-3e42b7f5f65b/collection/20994417-a0fea5db-88d7-4f57-8449-1eb6c37ac1ef?action=share&source=collection_link&creator=20994417"
+	},
+	"item": [
+		{
+			"name": "https://uvp-0000-uhc-desktop.gusadev.com/ms/customer/registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "uvp-0000-uhc-desktop.gusadev.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9,ru;q=0.8"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.3.1408296954.1697807604; PHPSESSID=90c5cf2fd05f6e9f3c57d5c0c095696f; _gid=GA1.2.49629457.1698153888; _gid=GA1.3.49629457.1698153888; _gat_330793217=1; _ga=GA1.2.1408296954.1697807604; frontend=25807c18f61c32e3d02adb51f89b727c; _ga_WX03P5E7CT=GS1.1.1698233009.14.1.1698235464.0.0.0"
+					},
+					{
+						"key": "origin",
+						"value": "https://uvp-0000-uhc-desktop.gusadev.com"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "referer",
+						"value": "https://uvp-0000-uhc-desktop.gusadev.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "store",
+						"value": "17"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "website",
+						"value": "4"
+					},
+					{
+						"key": "x-visitor-id",
+						"value": "GalA3b-JwJvdYkq6O5ykD"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"Gagas\",\"lastname\":\"Gago\",\"email\":\"gagas@test.com\",\"password\":\"Test1234\",\"registrationMethod\":\"default\",\"websiteId\":4,\"clientId\":\"memberId\"}"
+				},
+				"url": {
+					"raw": "https://uvp-0000-uhc-desktop.gusadev.com/ms/customer/registration",
+					"protocol": "https",
+					"host": [
+						"uvp-0000-uhc-desktop",
+						"gusadev",
+						"com"
+					],
+					"path": [
+						"ms",
+						"customer",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
