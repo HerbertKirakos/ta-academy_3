@@ -1,6 +1,6 @@
-import React from 'react';
 import './App.css';
 import {arraySum, arrayFilter, getUserNames} from './utils';
+import { personNames } from './task';
 
 function App() {
     const array = [1, 2, 3, 4, 5];
@@ -20,14 +20,18 @@ function App() {
     const userNamesArray = getUserNames(usersArray);
 
     return (
-    <div className="App">
-        <div className="wrapper">
-            <p>{sum}</p>
-            <p>{filter.toString()}</p>
-            <p>{userNamesArray.toString()}</p>
+        <div className="App">
+            <div className="wrapper">
+                <p>{sum}</p>
+                <p>{filter.toString()}</p>
+                <p>{userNamesArray.toString()}</p>
+            </div>
+
+            <div>
+                <p>{personNames.toString()}</p>
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 
 export default App;
