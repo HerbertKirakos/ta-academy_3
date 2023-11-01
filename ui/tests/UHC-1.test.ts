@@ -20,7 +20,8 @@ test.describe('UHC-1 (test ID)', () => {
         await lastName.type('Ivanov', { delay: 100 });
 
         const email = page.getByLabel('Email')
-        await email.type('test@test.com', { delay: 100 });
+        const randomEmail = Math.random();
+        await email.type(`test@test${randomEmail}.com`, { delay: 100 });
 
         const password = page.getByLabel('Password')
         await password.type('Test1234', { delay: 100 });
@@ -28,7 +29,7 @@ test.describe('UHC-1 (test ID)', () => {
         const createNewAccount = page.locator('//button[@aria-label="Create new account"]');
         await createNewAccount.click();
 
-        const welcomePopupTitleLocator = page.locator('//h2[contains(., "Welcome")]');
+        const welcomePopupTitleLocator = page.locator('//h2[contains(., "Welcome, Ivan")]');
         const welcomePopupTitle = await welcomePopupTitleLocator.textContent();
         expect(welcomePopupTitle).toStrictEqual('Welcome, Ivan');
 
