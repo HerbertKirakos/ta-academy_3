@@ -1,12 +1,10 @@
 import { Component } from '@Core/component';
-import { LoginNavigation } from './topSide/loginNavigation';
+import { ActionsBar } from "@Components/homePage/homePage/header/topSide/actionsBar";
 
 export class TopSide extends Component {
     private LOCATORS = {
-        myAccount: this.locator.locator(
-            '//div[contains(@class, "topStripMenu__menu___mVIts topStripMenu__dHelpCenterUHCG")]'
-        ),
+        actionsBar: this.locator.locator('//div[contains(@class, "topStripMenu__menu")]'),
     };
 
-    public LoginNavigation = new LoginNavigation(this.LOCATORS.myAccount, this.page);
+    public ActionsBar = new ActionsBar(this.LOCATORS.actionsBar, this.page)
 }
