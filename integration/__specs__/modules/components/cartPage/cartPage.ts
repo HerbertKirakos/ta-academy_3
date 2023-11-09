@@ -25,7 +25,7 @@ export class CartPage extends Container {
         return new CartList(cartListElement);
     }
 
-    public async OpenModalAddItem(): Promise<ModalAddItem> {
+    public async openModalAddItem(): Promise<ModalAddItem> {
         const [button] = await document.waitForXpath(this.selectors.buttonAddCartItem);
         fireEvent.click(button);
 
